@@ -27,13 +27,13 @@
 				if(pantalla > 1){
 					pantalla--;
 					slideRight();
-				}else if(event.offsetX == -1){
+				}
+			}else if(event.offsetX == -1){
 					if(pantalla < totalPantallas){
 						pantalla++;
 						slideLeft();
 					}
 				}
-			}
 		}
 		
 		private function slideLeft(){

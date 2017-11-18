@@ -20,11 +20,17 @@
 		public function setPlayer(isPlay:Boolean){
 			this.isPlayer = isPlay;
 			if(isPlayer){
-				trace("plyr");
+				trace("plyer");
 			}
 		}
 		public function moveTo(bfrX:Number, aftX:Number, bfrY:Number, aftY:Number, velocity:Number){
 			new Tween(this, "x", Regular.easeIn, bfrX, aftX, velocity, true);
+			new Tween(this,"y", Strong.easeIn, bfrY, aftY, velocity, true);
+		}
+		public function moveX(bfrX:Number, aftX:Number, velocity:Number){
+			new Tween(this, "x", Regular.easeIn, bfrX, aftX, velocity, true);
+		}
+		public function moveY(bfrY:Number, aftY:Number, velocity:Number){
 			new Tween(this,"y", Strong.easeIn, bfrY, aftY, velocity, true);
 		}
 		private function lanzarPiedra(){
