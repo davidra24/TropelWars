@@ -17,7 +17,8 @@
 		}
 		private function moverEsmad(event:TimerEvent){
 			var esmad:Esmad = new Esmad();
-			addChild(new Esmad());
+			
+			addChild(esmad);
 		}
 	}	
 }
